@@ -616,6 +616,7 @@ footer li a:hover {
     margin-top: 10px;
   }
   #monthprev, #monthnext {
+    background: none;
     font-size: 16px;
   }
   #monthprev {
@@ -625,13 +626,13 @@ footer li a:hover {
     right: 0;
   }
   .section4 .line {
-   display: none;
+    display: none;
   }
 
   /* スマホセクション5 */
   .section5 {
     display: block;
-    width: 460px;
+    width: 420px;
     margin: 12px 6px 0 6px;
     top: 200px;
     transform: translateX(-40%);
@@ -642,8 +643,8 @@ footer li a:hover {
     display: flex;
   }
   .today img {
-    width:200px;
-    height: 200px;
+    width:180px;
+    height: 180px;
   }
   .detail {
     margin-top: 6px;
