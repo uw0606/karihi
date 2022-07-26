@@ -620,10 +620,10 @@ footer li a:hover {
     font-size: 16px;
   }
   #monthprev {
-    left: 0;
+    left: -50%;
   }
   #monthnext {
-    right: 0;
+    right: -50%;
   }
   .section4 .line {
     display: none;
@@ -632,8 +632,8 @@ footer li a:hover {
   /* スマホセクション5 */
   .section5 {
     display: block;
-    width: 420px;
-    margin: 12px 2px 0 2px;
+    width: 400px;
+    margin: 12px 6px 0 6px;
     top: 200px;
     left: 0;
     display: flex;
@@ -655,7 +655,7 @@ footer li a:hover {
     margin-bottom: 6px;
   }
   .detail p {
-    position:relative;
+    position: relative;
   }
 
 
