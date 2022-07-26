@@ -632,7 +632,7 @@ footer li a:hover {
   /* スマホセクション5 */
   .section5 {
     display: block;
-    width: 380px;
+    width: 360px;
     margin: 12px 6px 0 6px;
     top: 200px;
     left: 0;
@@ -643,7 +643,7 @@ footer li a:hover {
     display: flex;
   }
   .today img {
-    width:160px;
+    width:140px;
     height: 200px;
   }
   .detail {
@@ -692,7 +692,7 @@ footer li a:hover {
   }
   .overlay li a {
     margin: 12px 6px 0 6px;
-    font-size: 24px;
+    font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     cursor: pointer;
     opacity:0;
