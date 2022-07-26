@@ -620,10 +620,10 @@ footer li a:hover {
     font-size: 16px;
   }
   #monthprev {
-    left: -50%;
+    left: -25%;
   }
   #monthnext {
-    right: -50%;
+    right: -25%;
   }
   .section4 .line {
     display: none;
@@ -632,7 +632,7 @@ footer li a:hover {
   /* スマホセクション5 */
   .section5 {
     display: block;
-    width: 360px;
+    width: 380px;
     margin: 12px 6px 0 6px;
     top: 200px;
     left: 0;
@@ -643,7 +643,7 @@ footer li a:hover {
     display: flex;
   }
   .today img {
-    width:140px;
+    width:160px;
     height: 200px;
   }
   .detail {
@@ -691,7 +691,7 @@ footer li a:hover {
     padding: 0;
   }
   .overlay li a {
-    margin: 12px 6px 0 6px;
+    margin: 12px 4px 0 4px;
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     cursor: pointer;
