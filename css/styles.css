@@ -635,8 +635,7 @@ footer li a:hover {
     width: 360px;
     margin: 12px 6px 0 6px;
     top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     display: flex;
     flex-flow: column;
   }
