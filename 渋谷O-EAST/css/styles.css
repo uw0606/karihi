@@ -616,16 +616,16 @@ footer li a:hover {
     font-size: 16px;
     margin-top: 10px;
   }
-  /* #monthprev, #monthnext {
+  #monthprev, #monthnext {
     background: none;
     font-size: 16px;
-  } */
-  /* #monthprev {
+  }
+  #monthprev {
     left: -25%;
-  } */
-  /* #monthnext {
+  }
+  #monthnext {
     right: -25%;
-  } */
+  }
   .section4 .line {
     display: none;
   }
