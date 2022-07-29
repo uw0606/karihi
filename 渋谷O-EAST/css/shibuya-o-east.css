@@ -567,7 +567,7 @@ footer li a:hover {
 
 
 /* スマホサイズ */
-@media (min-width: 0px) and (max-width: 450px) {
+@media (min-width: 0px) and (max-width: 500px) {
 
   /* メニュークリック前 */
   .shibuya {
@@ -668,7 +668,7 @@ footer li a:hover {
 
 
 
-@media (min-width: 451px) and (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 600px) {
 
   /* メニュークリック前 */
   .shibuya {
