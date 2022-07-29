@@ -565,8 +565,110 @@ footer li a:hover {
 
 
 
+
 /* スマホサイズ */
-@media (min-width: 0px) and (max-width: 600px) {
+@media (min-width: 0px) and (max-width: 450px) {
+
+  /* メニュークリック前 */
+  .shibuya {
+    opacity: 0;
+  }
+  .icon {
+    left: 25%;
+  }
+  .mypage {
+    opacity: 0;
+  }
+  .sp-menu {
+    opacity: 1;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(225, 225, 225);
+    padding: 48px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .sp-menu #open {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .sp-menu .material-icons {
+    color: rgba(225, 225, 225);
+  }
+
+
+  /* スマホセクション4 */
+  .section4 {
+    font-size: 18px;
+    top: 80px;
+    left: 40%;
+  }
+  .section4 .shibuya {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  /* #monthprev, #monthnext {
+    background: none;
+    font-size: 16px;
+  } */
+  /* #monthprev {
+    left: -25%;
+  } */
+  /* #monthnext {
+    right: -25%;
+  } */
+  .section4 .line {
+    display: none;
+  }
+
+  /* スマホセクション5 */
+  .section5 {
+    display: block;
+    width: 360px;
+    margin: 12px 6px 0 6px;
+    top: 200px;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+  }
+  .today {
+    display: flex;
+  }
+  .today img {
+    width: 150px;
+    height: 180px;
+  }
+  .detail {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+  .detail h1 {
+    margin-top: 2px;
+    margin-bottom: 6px;
+  }
+  .detail p {
+    position: relative;
+  }
+
+
+  /* セクション6 */
+  .section6 {
+  margin-top: 6800px;
+  }
+}
+
+
+
+@media (min-width: 451px) and (max-width: 600px) {
 
   /* メニュークリック前 */
   .shibuya {
