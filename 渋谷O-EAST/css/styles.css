@@ -613,21 +613,12 @@ footer li a:hover {
     left: 40%;
   }
   .section4 .month {
-    font-size: 16px;
+    font-size: 32px;
     margin-top: 10px;
   }
   #monthprev, #monthnext {
     background: none;
     font-size: 16px;
-  }
-  #monthprev {
-    left: -25%;
-  }
-  #monthnext {
-    right: -25%;
-  }
-  .section4 .line {
-    display: none;
   }
 
   /* スマホセクション5 */
