@@ -668,6 +668,7 @@ footer li a:hover {
 
 
 
+
   /* メニュークリック後----------------- */
   .overlay.show {
     opacity: 1;
@@ -692,8 +693,8 @@ footer li a:hover {
     padding: 0;
   }
   .overlay li a {
-    margin: 12px 4px 0 4px;
-    font-size: 20px;
+    margin: 12px 6px 0 6px;
+    font-size: 24px;
     font-family:Arial, Helvetica, sans-serif;
     cursor: pointer;
     opacity:0;
@@ -722,9 +723,11 @@ footer li a:hover {
     opacity: 0;
   }
 
-
-  
 }
+
+
+
+
 
 
 
@@ -738,8 +741,8 @@ footer li a:hover {
   .section4 .livehouse {
     font-size: 28px;
   }
-  .section4 .shibuya {
-    font-size: 24px;
+  .section4 .month {
+    font-size: 46px;
     width: 100%;
   }
   #monthprev, #monthnext {
