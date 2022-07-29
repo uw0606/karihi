@@ -567,7 +567,7 @@ footer li a:hover {
 
 
 /* スマホサイズ */
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 600px) {
 
   /* メニュークリック前 */
   .shibuya {
@@ -664,8 +664,66 @@ footer li a:hover {
   .section6 {
   margin-top: 6800px;
   }
-}
 
+
+
+
+
+  /* メニュークリック後----------------- */
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sp-menu #open.hide {
+    display: none;
+  }
+  .overlay #close {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .overlay {
+    overflow: scroll;
+  }
+  .overlay ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .overlay li a {
+    margin: 12px 6px 0 6px;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    opacity:0;
+    transform: translateY(16px);
+  }
+  .overlay li a:hover {
+    color:rgb(123, 120, 120)
+  }
+  .overlay.show li a {
+    opacity: 1;
+    transform: none;
+    transition: opacity 1s, transform .6s;
+  }
+
+  .section2 {
+   display: none;
+  }
+  .section3 {
+    display: none;
+  }
+
+  .footer.show {
+    opacity: 1;
+  }
+  .footer.hide {
+    opacity: 0;
+  }
+
+}
 
 
 @media (min-width: 500px) and (max-width: 600px) {
@@ -765,67 +823,7 @@ footer li a:hover {
   margin-top: 7150px;
   }
 
-
-
-
-  /* メニュークリック後----------------- */
-  .overlay.show {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .sp-menu #open.hide {
-    display: none;
-  }
-  .overlay #close {
-    font-size: 32px;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    cursor: pointer;
-  }
-  .overlay {
-    overflow: scroll;
-  }
-  .overlay ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .overlay li a {
-    margin: 12px 6px 0 6px;
-    font-size: 24px;
-    font-family:Arial, Helvetica, sans-serif;
-    cursor: pointer;
-    opacity:0;
-    transform: translateY(16px);
-  }
-  .overlay li a:hover {
-    color:rgb(123, 120, 120)
-  }
-  .overlay.show li a {
-    opacity: 1;
-    transform: none;
-    transition: opacity 1s, transform .6s;
-  }
-
-  .section2 {
-   display: none;
-  }
-  .section3 {
-    display: none;
-  }
-
-  .footer.show {
-    opacity: 1;
-  }
-  .footer.hide {
-    opacity: 0;
-  }
-
-
-  
 }
-
 
 
 
