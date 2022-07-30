@@ -103,3 +103,59 @@
     moveSlides();
   });
 }
+
+// ーーー渋谷カルーセルーーー
+{
+  const next = document.getElementById('shibuyanext');
+  const prev = document.getElementById('shibuyaprev');
+  const shibuyacarousel = document.querySelector('.shibuyacarousel') ;
+  const slides = shibuyacarousel.children;
+  let currentIndex = 0;
+
+  function playSlideshow() {
+    next.click();
+    setTimeout(() => {
+      
+      playSlideshow();
+    }, 6000);
+  }
+
+  playSlideshow();
+
+  // function updateButtons() {
+  //   if (currentIndex < 0) {
+  //     currentIndex = slides.length - 1;
+  //   }
+  //   if (currentIndex === slides.length - 3) {
+  //     currentIndex = -3;
+  //   }
+  // }
+  function updateButtons() {
+    if (currentIndex < 0) {
+      currentIndex = slides.length -4;
+    }
+    if (currentIndex === slides.length - 3) {
+      currentIndex = 0;
+    }
+  }
+
+  function moveSlides() {
+    const slidewidth = slides[0].getBoundingClientRect().width;
+    shibuyacarousel.style.transform = `translateX(${-1 * 300 * currentIndex}px)`;
+  }
+
+  updateButtons();
+
+
+  next.addEventListener('click', () => {
+    currentIndex++;
+    updateButtons();
+    moveSlides();
+  });
+
+  prev.addEventListener('click', () => {
+    currentIndex--;
+    updateButtons();
+    moveSlides();
+  });
+}

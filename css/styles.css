@@ -415,28 +415,28 @@ body {
   right:0%;
   text-align: center;
 } 
-.section4 .month {
+.section4 .shibuya {
   width: 100%;
-  font-size: 64px;
+  font-size: 24px;
   text-align: center;
   margin-top: 50px;
 }
-#monthprev, #monthnext {
-  position: absolute;
-  top:75%;
-  transform: translateY(-50%);
+#shibuyaprev, #shibuyanext {
+  background: none;
+  position:absolute;
+  top: 85px;
   color:red;
   border: none;
-  font-size: 24px;
+  font-size: 46px;
   cursor: pointer;
 }
-#monthprev:hover,#monthnext:hover {
+#shibuyaprev:hover,#shibuyanext:hover {
   opacity: 0.6;
 }
-#monthprev {
+#shibuyaprev {
   left: 0;
 }
-#monthnext {
+#shibuyanext {
   right: 0;
 }
 
@@ -447,14 +447,17 @@ body {
   margin-top: 0;
   margin-left: 30px;
   margin-right: 30px;
-  grid-column: 2; 
-  display: grid;
-  grid-template-columns: repeat(4, minmax(270px, 1fr));
-  grid-auto-rows: 300px;
-  gap: 30px;
-  position: absolute;
-  top: 650px;
+  margin-bottom: 0;
+  position:absolute;
+  top: 560px;
   left: 200px;
+  overflow: hidden;
+}
+.shibuyacarousel {
+  width: 1200px;
+  display: flex;
+  gap: 30px;
+  transition: transform 0.3s;
 }
 a  {
   color: rgb(0, 0, 0);
@@ -462,8 +465,8 @@ a  {
 }
 .today {
   background:#fff;
-  width: 100%;
-  height: 100%;
+  min-width: 270px;
+  height: 350px;
   cursor: pointer;
   line-height: 15px;
 }
@@ -565,8 +568,9 @@ footer li a:hover {
 
 
 
+
 /* スマホサイズ */
-@media (min-width: 0px) and (max-width: 600px) {
+@media (min-width: 0px) and (max-width: 450px) {
 
   /* メニュークリック前 */
   .shibuya {
@@ -609,39 +613,34 @@ footer li a:hover {
   .section4 {
     font-size: 18px;
     top: 80px;
-    left: 40%;
+    left: 35%;
   }
-  .section4 .month {
+  .section4 .shibuya {
     font-size: 32px;
     margin-top: 10px;
   }
-  #monthprev, #monthnext {
+  #shibuyaprev, #shibuyanext {
     background: none;
     font-size: 16px;
   }
-  #monthprev {
-    left: -25%;
-  }
-  #monthnext {
-    right: -25%;
-  }
-  .section4 .line {
-    display: none;
-  }
 
-  /* スマホセクション5 */
   .section5 {
     display: block;
-    width: 360px;
+    width: 490px;
     margin: 12px 6px 0 6px;
-    top: 200px;
+    top: 210px;
     left: 0;
     display: flex;
     flex-flow: column;
   }
-  .today {
-    display: flex;
-  }
+ .shibuyacarousel {
+  width: 300px;
+  gap: 10px;
+}
+.today {
+  min-width: 290px;
+  height: 350px;
+}
   .today img {
     width: 150px;
     height: 180px;
@@ -663,6 +662,7 @@ footer li a:hover {
   .section6 {
   margin-top: 6800px;
   }
+
 
 
 
@@ -721,9 +721,162 @@ footer li a:hover {
     opacity: 0;
   }
 
-
-  
 }
+
+
+
+@media (min-width: 451px) and (max-width: 600px) {
+
+   /* メニュークリック前 */
+   .shibuya {
+    opacity: 0;
+  }
+  .icon {
+    left: 25%;
+  }
+  .mypage {
+    opacity: 0;
+  }
+  .sp-menu {
+    opacity: 1;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(225, 225, 225);
+    padding: 48px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .sp-menu #open {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .sp-menu .material-icons {
+    color: rgba(225, 225, 225);
+  }
+
+
+  /* スマホセクション4 */
+  .section4 {
+    font-size: 18px;
+    top: 80px;
+    left: 40%;
+  }
+  .section4 .shibuya {
+    font-size: 32px;
+  }
+  #shibuyahprev, #shibuyahnext {
+    background: none;
+    font-size: 16px;
+  }
+
+  /* スマホセクション5 */
+  .section5 {
+    display: block;
+    width: 490px;
+    margin: 12px 6px 0 6px;
+    top: 210px;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+  }
+ .shibuyacarousel {
+  width: 300px;
+  gap: 10px;
+}
+.today {
+  min-width: 290px;
+  height: 350px;
+}
+  .today img {
+    width: 100%;
+    height: 40%;
+  }
+  .detail {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+  .detail h1 {
+    margin-top: 2px;
+    margin-bottom: 6px;
+  }
+  .detail p {
+    position: relative;
+  }
+
+  /* セクション6 */
+  .section6 {
+  margin-top: 8400px;
+  }
+
+
+
+
+
+  /* メニュークリック後----------------- */
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sp-menu #open.hide {
+    display: none;
+  }
+  .overlay #close {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .overlay {
+    overflow: scroll;
+  }
+  .overlay ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .overlay li a {
+    margin: 12px 4px 0 4px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    opacity:0;
+    transform: translateY(16px);
+  }
+  .overlay li a:hover {
+    color:rgb(123, 120, 120)
+  }
+  .overlay.show li a {
+    opacity: 1;
+    transform: none;
+    transition: opacity 1s, transform .6s;
+  }
+
+  .section2 {
+   display: none;
+  }
+  .section3 {
+    display: none;
+  }
+
+  .footer.show {
+    opacity: 1;
+  }
+  .footer.hide {
+    opacity: 0;
+  }
+
+}
+
 
 
 
@@ -739,16 +892,11 @@ footer li a:hover {
   .section4 .livehouse {
     font-size: 28px;
   }
-  .section4 .month {
-    font-size: 46px;
+  .section4 .shibuya {
     width: 100%;
   }
-  #monthprev, #monthnext {
-    top:78%;
-    font-size: 24px;
-  }
-  .section5 {
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
+  #shibuyaprev, #shibuyanext {
+    top: 79px;
   }
   .section6 {
     margin-top: 3200px;
