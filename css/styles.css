@@ -641,10 +641,12 @@ footer li a:hover {
     display: flex;
     flex-flow: column;
   }
-
+  .shibuyacarousel {
+    gap: 15px;
+  }
   .detail {
-    width: 220px;
-    height: 300px;
+    width: 200px;
+    height: 280px;
     margin-top: 6px;
     margin-left: 0;
   }
