@@ -804,7 +804,7 @@ footer li a:hover {
 
   /* セクション6 */
   .section6 {
-  margin-top: 8700px;
+  margin-top: 8400px;
   }
 
 
@@ -894,6 +894,6 @@ footer li a:hover {
     grid-template-columns: repeat(3, minmax(240px, 1fr));
   }
   .section6 {
-    margin-top: 3500px;
+    margin-top: 3200px;
   }
 }
