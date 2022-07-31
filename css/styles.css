@@ -643,16 +643,18 @@ footer li a:hover {
   }
 
   .detail {
-    width: 250px;
-    height: 320px;
+    width: 220px;
+    height: 300px;
     margin-top: 6px;
     margin-left: 0;
   }
   .detail h1 {
+    font-size: 14px;
     margin-top: 2px;
     margin-bottom: 6px;
   }
   .detail p {
+    font-size: 10px;
     position: relative;
   }
 
