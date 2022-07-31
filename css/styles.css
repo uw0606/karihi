@@ -637,14 +637,14 @@ footer li a:hover {
     width: 480px;
     margin: 12px 6px 0 6px;
     top: 200px;
-    left: 30px;
+    left: 0;
     display: flex;
     flex-flow: column;
   }
 
   .detail {
-    width: 250px;
-    height: 320px;
+    width: 22px;
+    height: 300px;
     margin-top: 6px;
     margin-left: 0;
   }
