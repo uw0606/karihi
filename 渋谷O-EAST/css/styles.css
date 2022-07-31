@@ -239,7 +239,7 @@ body {
   position: absolute;
   width: 90%;
   top: 60%;
-  left: 5%;
+  left: 205%;
 }
 
 /* ーーースライドボタンーーー */
@@ -507,7 +507,7 @@ a  {
   position:absolute;
   background: rgb(5, 5, 5);
   width: 100%;
-  margin-top: 2550px;
+  margin-top: 2900px;
 }
 
 
@@ -804,7 +804,7 @@ footer li a:hover {
 
   /* セクション6 */
   .section6 {
-  margin-top: 8400px;
+  margin-top: 9200px;
   }
 
 
@@ -894,6 +894,6 @@ footer li a:hover {
     grid-template-columns: repeat(3, minmax(240px, 1fr));
   }
   .section6 {
-    margin-top: 3200px;
+    margin-top: 3500px;
   }
 }
