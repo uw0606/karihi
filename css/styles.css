@@ -635,12 +635,13 @@ footer li a:hover {
   .section5 {
     display: block;
     width: 480px;
-    margin: 12px 30px 0 6px;
+    margin: 12px 6px 0 6px;
     top: 200px;
-    left: 0;
+    left: 30px;
     display: flex;
     flex-flow: column;
   }
+
   .detail {
     width: 250px;
     height: 320px;
