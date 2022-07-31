@@ -8,7 +8,7 @@ const app = express();
 
 // O-EAST 7月
 
-const URL = "https://shibuya-o.com/west/schedule/";
+const URL = "https://shibuya-o.com/crest/schedule/?y=2022&m=8";
 const data = [];
 
 axios(URL).then((response) => {
