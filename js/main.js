@@ -122,14 +122,6 @@
 
   playSlideshow();
 
-  // function updateButtons() {
-  //   if (currentIndex < 0) {
-  //     currentIndex = slides.length - 1;
-  //   }
-  //   if (currentIndex === slides.length - 3) {
-  //     currentIndex = -3;
-  //   }
-  // }
   function updateButtons() {
     if (currentIndex < 0) {
       currentIndex = slides.length -4;
@@ -142,6 +134,55 @@
   function moveSlides() {
     const slidewidth = slides[0].getBoundingClientRect().width;
     shibuyacarousel.style.transform = `translateX(${-1 * 300 * currentIndex}px)`;
+  }
+
+  updateButtons();
+
+
+  next.addEventListener('click', () => {
+    currentIndex++;
+    updateButtons();
+    moveSlides();
+  });
+
+  prev.addEventListener('click', () => {
+    currentIndex--;
+    updateButtons();
+    moveSlides();
+  });
+}
+
+
+// ーーー新宿カルーセルーーー
+{
+  const next = document.getElementById('shinjukunext');
+  const prev = document.getElementById('shinjukuprev');
+  const shinjukucarousel = document.querySelector('.shinjukucarousel') ;
+  const slides = shinjukucarousel.children;
+  let currentIndex = 0;
+
+  function playSlideshow() {
+    next.click();
+    setTimeout(() => {
+      
+      playSlideshow();
+    }, 6000);
+  }
+
+  playSlideshow();
+
+  function updateButtons() {
+    if (currentIndex < 0) {
+      currentIndex = slides.length -4;
+    }
+    if (currentIndex === slides.length - 3) {
+      currentIndex = 0;
+    }
+  }
+
+  function moveSlides() {
+    const slidewidth = slides[0].getBoundingClientRect().width;
+    shinjukucarousel.style.transform = `translateX(${-1 * 300 * currentIndex}px)`;
   }
 
   updateButtons();

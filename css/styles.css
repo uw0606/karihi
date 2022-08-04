@@ -505,8 +505,45 @@ a  {
 }
 
 
-/* セクション６ */
+/* セクション6 */
 .section6 {
+  color:rgb(5, 5, 5);
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 950px;
+  left: 50%;
+  transform: translateX(25%);
+  z-index: 7;
+}
+.section6 .shinjukutoday {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+#shinjukuprev, #shinjukunext {
+  background: none;
+  position:absolute;
+  top: 37px;
+  color:red;
+  border: none;
+  font-size: 46px;
+  cursor: pointer;
+}
+#shinjukuprev:hover,#shinjukunext:hover {
+  opacity: 0.6;
+}
+#shinjukuprev {
+  left: -100%;
+}
+#shinjukunext {
+  right: -100%;
+}
+
+
+/* セクション7 */
+.section7 {
   position:absolute;
   background: rgb(5, 5, 5);
   width: 100%;
@@ -622,13 +659,13 @@ footer li a:hover {
   }
   #shibuyaprev, #shibuyanext {
     font-size: 36px;
-    top: 56px;
+    top: 83px;
   }
   #shibuyaprev {
-    left: -25%;
+    left: -20%;
   }
   #shibuyanext {
-    right: -25%;
+    right: -20%;
   }
 
   /* スマホセクション5 */
@@ -660,9 +697,31 @@ footer li a:hover {
     position: relative;
   }
 
-
-  /* セクション6 */
+  /* スマホセクション6 */
   .section6 {
+    font-size: 18px;
+    top: 580px;
+    left: 40%;
+  }
+  .section6 .shinjukutoday {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  #shinjukuprev, #shinjukunext {
+    font-size: 36px;
+    top: 30px;
+  }
+  #shinjukuprev {
+    left: -125%;
+  }
+  #shinjukunext {
+    right: -125%;
+  }
+
+
+  /* セクション7 */
+  .section7 {
   margin-top: 3000px;
   }
 
@@ -807,8 +866,24 @@ footer li a:hover {
     position: relative;
   }
 
-  /* セクション6 */
-  .section6 {
+    /* スマホセクション6 */
+    .section6 {
+      font-size: 24px;
+      top: 580px;
+      left: 40%;
+    }
+    .section6 .shinjukutoday {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    #shinjukuprev, #shinjukunext {
+      font-size: 40px;
+      top: 27px;
+    }
+
+  /* セクション7 */
+  .section7 {
   margin-top: 8400px;
   }
 
@@ -893,7 +968,16 @@ footer li a:hover {
   #shibuyaprev, #shibuyanext {
     top: 79px;
   }
-  .section6 {
+  .section6 .livehouse {
+    font-size: 28px;
+  }
+  .section6 .shinjukutoday {
+    width: 100%;
+  }
+  #shinjukuprev, #shinjukunext {
+    top: 37px;
+  }
+  .section7 {
     margin-top: 3200px;
   }
 }
