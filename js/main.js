@@ -124,7 +124,7 @@
 
   function updateButtons() {
     if (currentIndex < 0) {
-      currentIndex = slides.length -4;
+      currentIndex = slides.length - 4;
     }
     if (currentIndex === slides.length - 3) {
       currentIndex = 0;
@@ -132,7 +132,7 @@
   }
 
   function moveSlides() {
-    const slidewidth = slides[0].getBoundingClientRect().width;
+    // const slidewidth = slides[0].getBoundingClientRect().width;
     shibuyacarousel.style.transform = `translateX(${-1 * 300 * currentIndex}px)`;
   }
 
@@ -183,6 +183,55 @@
   function moveSlides() {
     const slidewidth = slides[0].getBoundingClientRect().width;
     shinjukucarousel.style.transform = `translateX(${-1 * 300 * currentIndex}px)`;
+  }
+
+  updateButtons();
+
+
+  next.addEventListener('click', () => {
+    currentIndex++;
+    updateButtons();
+    moveSlides();
+  });
+
+  prev.addEventListener('click', () => {
+    currentIndex--;
+    updateButtons();
+    moveSlides();
+  });
+}
+
+
+// ーーー下北沢カルーセルーーー
+{
+  const next = document.getElementById('shimokitazawanext');
+  const prev = document.getElementById('shimokitazawaprev');
+  const shimokitazawacarousel = document.querySelector('.shimokitazawacarousel') ;
+  const slides = shimokitazawacarousel.children;
+  let currentIndex = 0;
+
+  function playSlideshow() {
+    next.click();
+    setTimeout(() => {
+      
+      playSlideshow();
+    }, 6000);
+  }
+
+  playSlideshow();
+
+  function updateButtons() {
+    if (currentIndex < 0) {
+      currentIndex = slides.length -4;
+    }
+    if (currentIndex === slides.length - 3) {
+      currentIndex = 0;
+    }
+  }
+
+  function moveSlides() {
+    const slidewidth = slides[0].getBoundingClientRect().width;
+    shimokitazawacarousel.style.transform = `translateX(${-1 * 300 * currentIndex}px)`;
   }
 
   updateButtons();

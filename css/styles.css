@@ -511,11 +511,16 @@ a  {
   font-size: 32px;
   font-weight: bold;
   position: absolute;
-  top: 950px;
+  top: 930px;
   left: 50%;
   transform: translateX(25%);
   z-index: 7;
 }
+.section6 .livehouse {
+  width: 100%;
+  right:0%;
+  text-align: center;
+} 
 .section6 .shinjukutoday {
   width: 100%;
   font-size: 24px;
@@ -535,10 +540,10 @@ a  {
   opacity: 0.6;
 }
 #shinjukuprev {
-  left: -100%;
+  left: -105%;
 }
 #shinjukunext {
-  right: -100%;
+  right: -105%;
 }
 
 
@@ -550,11 +555,117 @@ a  {
   margin-right: 30px;
   margin-bottom: 0;
   position:absolute;
-  top: 1080px;
+  top: 1040px;
   left: 200px;
   overflow: hidden;
 }
 .shinjukucarousel {
+  width: 1180px;
+  display: flex;
+  gap: 30px;
+  transition: transform 0.3s;
+}
+a  {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.today {
+  background:#fff;
+  min-width: 270px;
+  height: 350px;
+  cursor: pointer;
+  line-height: 15px;
+}
+.today img {
+  background:rgb(0, 0, 0);
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+.today:hover {
+  opacity: 0.6;
+}
+.detail {
+  position: relative;
+}
+.detail h1{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 0;
+}
+.detail p {
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 0;
+  font-size: 12px;
+}
+.detail .line {
+  border-bottom: 1.5px solid black;
+}
+
+
+/* セクション8 */
+.section8 {
+  color:rgb(5, 5, 5);
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 1410px;
+  left: 50%;
+  transform: translateX(25%);
+  z-index: 7;
+}
+.section8 .livehouse {
+  width: 100%;
+  right:0%;
+  text-align: center;
+} 
+.section8 .shimokitazawatoday {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+#shimokitazawaprev, #shimokitazawanext {
+  background: none;
+  position:absolute;
+  top: 37px;
+  color:red;
+  border: none;
+  font-size: 46px;
+  cursor: pointer;
+}
+#shimokitazawaprev:hover,#shimokitazawanext:hover {
+  opacity: 0.6;
+}
+#shimokitazawaprev {
+  left: -90%;
+}
+#shimokitazawanext {
+  right: -90%;
+}
+
+
+/* セクション9 */
+.section9 {
+  margin: 100px auto;
+  margin-top: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 0;
+  position:absolute;
+  top: 1520px;
+  left: 200px;
+  overflow: hidden;
+}
+.shimokitazawacarousel {
   width: 1200px;
   display: flex;
   gap: 30px;
@@ -737,7 +848,7 @@ footer li a:hover {
     display: block;
     width: 480px;
     margin: 12px 6px 0 6px;
-    top: 200px;
+    top: 180px;
     left: 0;
     display: flex;
     flex-flow: column;
@@ -764,7 +875,7 @@ footer li a:hover {
   /* スマホセクション6 */
   .section6 {
     font-size: 18px;
-    top: 580px;
+    top: 560px;
     left: 40%;
   }
   .section6 .shinjukutoday {
@@ -789,12 +900,65 @@ footer li a:hover {
     display: block;
     width: 480px;
     margin: 12px 6px 0 6px;
-    top: 680px;
+    top: 630px;
     left: 0;
     display: flex;
     flex-flow: column;
   }
   .shinjukucarousel {
+    gap: 15px;
+  }
+  .detail {
+    width: 200px;
+    height: 280px;
+    margin-top: 6px;
+    margin-left: 0;
+  }
+  .detail h1 {
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+  }
+  .detail p {
+    font-size: 10px;
+    position: relative;
+  }
+
+
+  /* スマホセクション8 */
+  .section8 {
+    font-size: 18px;
+    top: 1060px;
+    left: 40%;
+  }
+  .section8 .shimokitazawatoday {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  #shimokitazawaprev, #shimokitazawanext {
+    font-size: 36px;
+    top: 30px;
+  }
+  #shimokitazawaprev {
+    left: -125%;
+  }
+  #shimokitazawanext {
+    right: -125%;
+  }
+
+
+  /* スマホセクション9 */
+  .section9 {
+    display: block;
+    width: 480px;
+    margin: 12px 6px 0 6px;
+    top: 1130px;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+  }
+  .shimokitazawacarousel {
     gap: 15px;
   }
   .detail {
@@ -941,7 +1105,7 @@ footer li a:hover {
     display: block;
     width: 480px;
     margin: 12px 6px 0 6px;
-    top: 200px;
+    top: 190px;
     left: 0;
     display: flex;
     flex-flow: column;
@@ -963,7 +1127,7 @@ footer li a:hover {
     /* スマホセクション6 */
     .section6 {
       font-size: 24px;
-      top: 580px;
+      top: 560px;
       left: 40%;
     }
     .section6 .shinjukutoday {
@@ -982,7 +1146,7 @@ footer li a:hover {
     display: block;
     width: 480px;
     margin: 12px 6px 0 6px;
-    top: 680px;
+    top: 630px;
     left: 0;
     display: flex;
     flex-flow: column;
@@ -1001,6 +1165,48 @@ footer li a:hover {
     position: relative;
   }
 
+
+
+  /* スマホセクション8 */
+  .section8 {
+    font-size: 24px;
+    top: 1000px;
+    left: 40%;
+  }
+  .section8 .shimokitazawatoday {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  #shimokitazawaprev, #shimokitazawanext {
+    font-size: 40px;
+    top: 27px;
+  }
+
+
+    /* スマホセクション9 */
+.section9 {
+  display: block;
+  width: 480px;
+  margin: 12px 6px 0 6px;
+  top: 1070px;
+  left: 0;
+  display: flex;
+  flex-flow: column;
+}
+.detail {
+  width: 100%;
+  height: 100%;
+  margin-top: 6px;
+  margin-left: 0;
+}
+.detail h1 {
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+.detail p {
+  position: relative;
+}
   /* セクション10 */
   .section10 {
   margin-top: 8400px;
@@ -1094,6 +1300,15 @@ footer li a:hover {
     width: 100%;
   }
   #shinjukuprev, #shinjukunext {
+    top: 37px;
+  }
+  .section8 .livehouse {
+    font-size: 28px;
+  }
+  .section8 .shimokitazawatoday {
+    width: 100%;
+  }
+  #shimokitazawaprev, #shimokitazawanext {
     top: 37px;
   }
   .section10 {
