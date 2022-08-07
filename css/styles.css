@@ -834,7 +834,7 @@ footer li a:hover {
   }
   #shibuyaprev, #shibuyanext {
     font-size: 36px;
-    top: 56px;
+    top: 55px;
   }
   #shibuyaprev {
     left: -20%;
@@ -885,7 +885,7 @@ footer li a:hover {
   }
   #shinjukuprev, #shinjukunext {
     font-size: 36px;
-    top: 30px;
+    top: 29px;
   }
   #shinjukuprev {
     left: -125%;
@@ -928,7 +928,7 @@ footer li a:hover {
   /* スマホセクション8 */
   .section8 {
     font-size: 18px;
-    top: 1060px;
+    top: 1020px;
     left: 40%;
   }
   .section8 .shimokitazawatoday {
@@ -938,13 +938,13 @@ footer li a:hover {
   }
   #shimokitazawaprev, #shimokitazawanext {
     font-size: 36px;
-    top: 30px;
+    top: 29px;
   }
   #shimokitazawaprev {
-    left: -125%;
+    left: -100%;
   }
   #shimokitazawanext {
-    right: -125%;
+    right: -100%;
   }
 
 
@@ -953,7 +953,7 @@ footer li a:hover {
     display: block;
     width: 480px;
     margin: 12px 6px 0 6px;
-    top: 1130px;
+    top: 1090px;
     left: 0;
     display: flex;
     flex-flow: column;
