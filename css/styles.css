@@ -722,7 +722,7 @@ a  {
   position:absolute;
   background: rgb(5, 5, 5);
   width: 100%;
-  margin-top: 2550px;
+  margin-top: 750px;
 }
 
 
@@ -980,7 +980,7 @@ footer li a:hover {
 
   /* セクション10 */
   .section10 {
-  margin-top: 3000px;
+  margin-top: 1600px;
   }
 
 
@@ -1209,7 +1209,7 @@ footer li a:hover {
 }
   /* セクション10 */
   .section10 {
-  margin-top: 8400px;
+  margin-top: 1600px;
   }
 
 
@@ -1312,6 +1312,6 @@ footer li a:hover {
     top: 37px;
   }
   .section10 {
-    margin-top: 3200px;
+    margin-top: 750px;
   }
 }
