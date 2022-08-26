@@ -492,6 +492,19 @@ a  {
   margin-bottom: 4px;
   padding: 0;
 }
+.detail h1.duo{
+  font-size: 16px;
+}
+.detail h2{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  padding: 0;
+}
 .detail p {
   margin-top: 4px;
   margin-left: 10px;
@@ -598,6 +611,19 @@ a  {
   margin-bottom: 4px;
   padding: 0;
 }
+.detail h1.duo{
+  font-size: 16px;
+}
+.detail h2{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  padding: 0;
+}
 .detail p {
   margin-top: 4px;
   margin-left: 10px;
@@ -702,6 +728,19 @@ a  {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 4px;
+  padding: 0;
+}
+.detail h1.duo{
+  font-size: 16px;
+}
+.detail h2{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2px;
   padding: 0;
 }
 .detail p {
