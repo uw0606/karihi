@@ -893,7 +893,7 @@ footer li a:hover {
     flex-flow: column;
   }
   .shibuyacarousel {
-    gap: 15px;
+    gap: 30px;
   }
   .detail {
     width: 200px;
@@ -945,7 +945,7 @@ footer li a:hover {
     flex-flow: column;
   }
   .shinjukucarousel {
-    gap: 15px;
+    gap: 30px;
   }
   .detail {
     width: 200px;
@@ -998,7 +998,7 @@ footer li a:hover {
     flex-flow: column;
   }
   .shimokitazawacarousel {
-    gap: 15px;
+    gap: 30px;
   }
   .detail {
     width: 200px;
