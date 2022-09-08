@@ -504,10 +504,46 @@ a  {
 
 /* セクション６ */
 .section6 {
+  background: rgb(34, 34, 34);
+  color:rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 3650px;
+}
+.section6 h1 {
+  position: absolute;
+  left:50%;
+}
+.section6 h1 a {
+  color:rgb(255, 255, 255);
+}
+.section6 iframe {
+  position: absolute;
+  width: 580px;
+  height: 360px;
+  left:200px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.section6 div {
+  margin-top: 80px;
+  margin-left: 850px;
+}
+.section6 p a {
+  color:rgb(255, 255, 255);
+}
+.section6 p a:hover {
+  opacity: 0.5;
+}
+
+
+/* セクション7 */
+.section7 {
   position:absolute;
   background: rgb(5, 5, 5);
   width: 100%;
-  margin-top: 2550px;
+  top: 4200px;
 }
 
 
@@ -650,10 +686,31 @@ footer li a:hover {
     position: relative;
   }
 
+/* セクション6 */
+.section6 {
+  margin-top: 3700px;
+}
+.section6 h1 {
+  position: absolute;
+  left: 120px;
+}
+.section6 iframe {
+  position: absolute;
+  width: 320px;
+  height: 240px;
+  left: 0;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.section6 div {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 340px;
+}
 
-  /* セクション6 */
-  .section6 {
-  margin-top: 6800px;
+  /* セクション7 */
+  .section7 {
+  margin-top: 7400px;
   }
 
 
@@ -804,7 +861,30 @@ footer li a:hover {
 
   /* セクション6 */
   .section6 {
-  margin-top: 8400px;
+    margin-top: 5500px;
+  }
+  .section6 h1 {
+    position: absolute;
+    left: 35%;
+  }
+  .section6 iframe {
+    position: absolute;
+    width: 440px;
+    height: 320px;
+    left: 0;
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+  .section6 div {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 400px;
+  }
+
+
+  /* セクション7 */
+  .section7 {
+  margin-top: 9200px;
   }
 
 
@@ -894,6 +974,14 @@ footer li a:hover {
     grid-template-columns: repeat(3, minmax(240px, 1fr));
   }
   .section6 {
-    margin-top: 3200px;
+    margin-top: 750px;
+  }
+  .section6 div{
+    margin-top: 480px;
+    margin-left: 230px;
+
+  }
+  .section7 {
+    margin-top: 3500px;
   }
 }
