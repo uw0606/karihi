@@ -1,0 +1,963 @@
+body {
+  margin: 0;
+  background: rgba(231, 230, 230, 0.6);
+}
+
+/* PCメニュー */
+/* セクション１ */
+.section1 {
+  background: rgb(5, 5, 5);
+  height: 50px;
+  text-align: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}
+/* 渋谷タグ */
+/* .shibuya {
+  color:rgb(190, 190, 190);
+  position: absolute;
+  top:25%;
+  left: 25px;
+  cursor: pointer;
+} */
+/* アイコン */
+.icon {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon img {
+  width: 160px;
+}
+/* マイページタグ */
+.mypage {
+  color:rgb(190, 190, 190);
+  position: absolute;
+  top:25%;
+  right: 25px;
+  cursor: pointer;
+}
+.sp-menu {
+  opacity: 0;
+}
+.overlay {
+  opacity: 0;
+}
+
+/* セクション2 */
+.section2 {
+  background: #fff;
+  width:200px;
+  grid-row: 1/4;
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: scroll;
+  z-index: 8;
+}
+.section2 ul {
+  list-style: none;
+  margin-top: 84px;
+  padding: 0 16px 0 16px;
+
+}
+.section2 ul li {
+  cursor: pointer;
+  padding-top: 4px;
+}
+.section2 ul li:hover {
+  opacity: .6;
+}
+.section2 ul li a{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-decoration: none;
+  color:  rgb(52, 52, 52);
+}
+.section2 ul li a i{
+  font-size: 36px;
+}
+.line {
+  border-bottom: 1px solid red;
+}
+
+/* セクション3 */
+.section3 {
+  background: rgb(0, 0, 0);
+  height: 300px;
+  margin-top: 50px;
+  position:absolute;
+  top: 0;
+  left: 200px;
+  padding: 0;
+  display: grid;
+  z-index: 7;
+}
+
+/* カルーセル */
+.carousel {
+  grid-row: 1/3;
+  grid-column: 3/1;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s;
+}
+.carousel li {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+}
+.carousel li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.carousel:hover {
+  opacity: 0.8;
+}
+
+/* カルーセル1 */
+.carousel .day1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+}
+.carousel .vence1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.carousel .time1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+.carousel .artist1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+/* カルーセル2 */
+.carousel .day2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 0%;
+  left: 105%;
+}
+.carousel .vence2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 15%;
+  left: 105%;
+}
+.carousel .time2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 105%;
+}
+.carousel .artist2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 60%;
+  left: 105%;
+}
+/* カルーセル3 */
+.carousel .day3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 0%;
+  left: 205%;
+}
+.carousel .vence3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 15%;
+  left: 205%;
+}
+.carousel .time3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 205%;
+}
+.carousel .artist3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 60%;
+  left: 205%;
+}
+
+/* ーーースライドボタンーーー */
+#prev, #next {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 64px;
+  padding: 0 8px 4px;
+  cursor: pointer;
+}
+#prev:hover,#next:hover {
+  opacity: 0.6;
+}
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+.hidden {
+  display: none;
+}
+
+/* ーーーナビタグーーー */
+/* ーーーナビタグーーー */
+.btn {
+  text-align: center;
+  position: absolute;
+  top:90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn button + button {
+  margin-left: 8px;
+}
+.btn button {
+  border: none;
+  width: 12px;
+  height: 12px;
+  background: rgb(112, 112, 112);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn .current {
+  background: rgb(255, 255, 255);
+}
+
+/* ーーー広告１ーーー */
+.ad1 {
+  width: 350px;
+  height: 149px;
+  padding: 0 0 1px 3px;
+  grid-column: 3/5;
+  cursor: pointer;
+}
+.ad1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.ad1:hover {
+  opacity: 0.8;
+}
+.ad1day {
+  grid-column: 3/5;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.ad1vence {
+  grid-column: 3/5;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.ad1time {
+  grid-column: 3/5;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+.ad1artist {
+  grid-column: 3/5;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+/* ーーー広告２ーーー */
+.ad2 {
+  width: 350px;
+  height: 149px;
+  padding: 1px 0 0 3px;
+  grid-column: 3/5;
+  cursor: pointer;
+}
+.ad2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.ad2:hover {
+  opacity: 0.8;
+}
+.ad2day {
+  grid-column: 3/5;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+.ad2vence {
+  grid-column: 3/5;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+}
+.ad2time {
+  grid-column: 3/5;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+}
+.ad2artist {
+  grid-column: 3/5;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+
+/* セクション4 */
+.section4 {
+  color:rgb(5, 5, 5);
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-25%);
+  z-index: 7;
+}
+.section4 .livehouse {
+  width: 100%;
+  right:0%;
+  text-align: center;
+} 
+.section4 .month {
+  width: 100%;
+  font-size: 64px;
+  text-align: center;
+  margin-top: 50px;
+}
+#monthprev, #monthnext {
+  position: absolute;
+  top:75%;
+  transform: translateY(-50%);
+  color:red;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+#monthprev:hover,#monthnext:hover {
+  opacity: 0.6;
+}
+#monthprev {
+  left: 0;
+}
+#monthnext {
+  right: 0;
+}
+
+
+/* セクション5 */
+.section5 {
+  margin: 100px auto;
+  margin-top: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  grid-column: 2; 
+  display: grid;
+  grid-template-columns: repeat(4, minmax(270px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 30px;
+  position: absolute;
+  top: 650px;
+  left: 200px;
+}
+a  {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.today {
+  background:#fff;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  line-height: 15px;
+}
+.today img {
+  background:rgb(0, 0, 0);
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+.today:hover {
+  opacity: 0.6;
+}
+.detail {
+  position: relative;
+}
+.detail h2 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 0;
+}
+.detail p {
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 0;
+  font-size: 12px;
+}
+.detail .line {
+  border-bottom: 1.5px solid black;
+}
+
+
+/* セクション６ */
+.section6 {
+  background: rgb(34, 34, 34);
+  color:rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 2700px;
+}
+.section6 h1 {
+  position: absolute;
+  left:50%;
+}
+.section6 iframe {
+  position: absolute;
+  width: 580px;
+  height: 360px;
+  left:200px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.section6 div {
+  margin-top: 80px;
+  margin-left: 850px;
+}
+.section6 p a {
+  color:rgb(255, 255, 255);
+}
+.section6 p a:hover {
+  opacity: 0.5;
+}
+
+
+
+/* フッター */
+footer {
+  position: fixed;
+  font-size: 12px;
+  text-align: center;
+  background: rgb(5, 5, 5);
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+footer li a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer li a:hover {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* スマホサイズ */
+@media (min-width: 0px) and (max-width: 450px) {
+
+  /* メニュークリック前 */
+  .shibuya {
+    opacity: 0;
+  }
+  .icon {
+    left: 25%;
+  }
+  .mypage {
+    opacity: 0;
+  }
+  .sp-menu {
+    opacity: 1;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(225, 225, 225);
+    padding: 48px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .sp-menu #open {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .sp-menu .material-icons {
+    color: rgba(225, 225, 225);
+  }
+
+
+  /* スマホセクション4 */
+  .section4 {
+    font-size: 18px;
+    top: 80px;
+    left: 35%;
+  }
+  .section4 .month {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  #monthprev, #monthnext {
+    background: none;
+    font-size: 16px;
+  }
+
+  /* スマホセクション5 */
+  .section5 {
+    display: block;
+    width: 360px;
+    margin: 12px 6px 0 6px;
+    top: 200px;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+  }
+  .today {
+    display: flex;
+  }
+  .today img {
+    width: 150px;
+    height: 180px;
+  }
+  .detail {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+  .detail h2  {
+    margin-top: 2px;
+    margin-bottom: 6px;
+  }
+  .detail p {
+    position: relative;
+  }
+
+/* セクション6 */
+.section6 {
+  margin-top: 2200px;
+}
+.section6 h1 {
+  position: absolute;
+  left: 120px;
+}
+.section6 iframe {
+  position: absolute;
+  width: 320px;
+  height: 240px;
+  left: 0;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.section6 div {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 340px;
+}
+
+
+
+
+
+  /* メニュークリック後----------------- */
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sp-menu #open.hide {
+    display: none;
+  }
+  .overlay #close {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .overlay {
+    overflow: scroll;
+  }
+  .overlay ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .overlay li a {
+    margin: 12px 4px 0 4px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    opacity:0;
+    transform: translateY(16px);
+  }
+  .overlay li a:hover {
+    color:rgb(123, 120, 120)
+  }
+  .overlay.show li a {
+    opacity: 1;
+    transform: none;
+    transition: opacity 1s, transform .6s;
+  }
+
+  .section2 {
+   display: none;
+  }
+  .section3 {
+    display: none;
+  }
+
+  .footer.show {
+    opacity: 1;
+  }
+  .footer.hide {
+    opacity: 0;
+  }
+
+}
+
+
+
+@media (min-width: 451px) and (max-width: 600px) {
+
+   /* メニュークリック前 */
+   .shibuya {
+    opacity: 0;
+  }
+  .icon {
+    left: 25%;
+  }
+  .mypage {
+    opacity: 0;
+  }
+  .sp-menu {
+    opacity: 1;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(225, 225, 225);
+    padding: 48px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .sp-menu #open {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .sp-menu .material-icons {
+    color: rgba(225, 225, 225);
+  }
+
+
+  /* スマホセクション4 */
+  .section4 {
+    font-size: 18px;
+    top: 80px;
+    left: 40%;
+  }
+  .section4 .month {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  #monthprev, #monthnext {
+    background: none;
+    font-size: 16px;
+  }
+
+  /* スマホセクション5 */
+  .section5 {
+    display: block;
+    width: 480px;
+    margin: 12px 6px 0 6px;
+    top: 200px;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+  }
+  .today {
+    display: flex;
+  }
+  .today img {
+    width: 200px;
+    height: 240px;
+  }
+  .detail {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+  .detail h2  {
+    margin-top: 2px;
+    margin-bottom: 6px;
+  }
+  .detail p {
+    position: relative;
+  }
+
+
+  /* セクション6 */
+  .section6 {
+    margin-top: 3500px;
+  }
+  .section6 h1 {
+    position: absolute;
+    left: 35%;
+  }
+  .section6 iframe {
+    position: absolute;
+    width: 440px;
+    height: 320px;
+    left: 0;
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+  .section6 div {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 400px;
+  }
+
+
+
+
+
+
+  /* メニュークリック後----------------- */
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sp-menu #open.hide {
+    display: none;
+  }
+  .overlay #close {
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .overlay {
+    overflow: scroll;
+  }
+  .overlay ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .overlay li a {
+    margin: 12px 4px 0 4px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    opacity:0;
+    transform: translateY(16px);
+  }
+  .overlay li a:hover {
+    color:rgb(123, 120, 120)
+  }
+  .overlay.show li a {
+    opacity: 1;
+    transform: none;
+    transition: opacity 1s, transform .6s;
+  }
+
+  .section2 {
+   display: none;
+  }
+  .section3 {
+    display: none;
+  }
+
+  .footer.show {
+    opacity: 1;
+  }
+  .footer.hide {
+    opacity: 0;
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .ad1 {
+    display: none;
+  }
+  .ad2 {
+    display: none;
+  }
+  .section4 .livehouse {
+    font-size: 28px;
+  }
+  .section4 .month {
+    font-size: 46px;
+    width: 100%;
+  }
+  #monthprev, #monthnext {
+    top:78%;
+    font-size: 24px;
+  }
+  .section5 {
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+  }
+  .section6 {
+    margin-top: 650px;
+  }
+  .section6 div{
+    margin-top: 480px;
+    margin-left: 230px;
+
+  }
+}
