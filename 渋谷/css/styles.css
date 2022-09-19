@@ -521,7 +521,7 @@ a  {
   position:absolute;
   background: rgb(5, 5, 5);
   width: 100%;
-  margin-top: 1500px;
+  margin-top: 700px;
 }
 
 
@@ -667,7 +667,7 @@ footer li a:hover {
 
   /* セクション6 */
   .section6 {
-  margin-top: 4000px;
+  margin-top: 3150px;
   }
 
 
@@ -818,7 +818,7 @@ footer li a:hover {
 
   /* セクション6 */
   .section6 {
-  margin-top: 5000px;
+  margin-top: 4000px;
   }
 
 
@@ -908,6 +908,6 @@ footer li a:hover {
     grid-template-columns: repeat(3, minmax(240px, 1fr));
   }
   .section6 {
-    margin-top: 1800px;
+    margin-top: 1000px;
   }
 }
