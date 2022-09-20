@@ -681,7 +681,8 @@ footer li a:hover {
 }
 .section6 h1 {
   position: absolute;
-  left: 120px;
+  font-size: 24px;
+  left: 100px;
 }
 .section6 iframe {
   position: absolute;
