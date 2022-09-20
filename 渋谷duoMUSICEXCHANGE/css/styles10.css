@@ -692,7 +692,8 @@ footer li a:hover {
 }
 .section6 h1 {
   position: absolute;
-  left: 120px;
+  font-size: 16px;
+  left: 100px;
 }
 .section6 iframe {
   position: absolute;
@@ -707,12 +708,6 @@ footer li a:hover {
   margin-left: 30px;
   margin-top: 340px;
 }
-
-  /* セクション7 */
-  .section7 {
-  margin-top: 7400px;
-  }
-
 
 
 
@@ -865,7 +860,8 @@ footer li a:hover {
   }
   .section6 h1 {
     position: absolute;
-    left: 35%;
+    font-size: 20px;
+    left: 20%;
   }
   .section6 iframe {
     position: absolute;
@@ -879,12 +875,6 @@ footer li a:hover {
     position: absolute;
     margin-left: 30px;
     margin-top: 400px;
-  }
-
-
-  /* セクション7 */
-  .section7 {
-  margin-top: 9200px;
   }
 
 
